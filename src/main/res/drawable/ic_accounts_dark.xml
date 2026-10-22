@@ -1,9 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon "circle-user" from Lucide (https://lucide.dev), ISC License -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-		android:width="24dp"
-		android:height="24dp"
-		android:viewportHeight="24"
-		android:viewportWidth="24">
-    <path
-		android:fillColor="#FFFFFFFF"
-		android:pathData="M11 9C11 10.66 9.66 12 8 12C6.34 12 5 10.66 5 9C5 7.34 6.34 6 8 6C9.66 6 11 7.34 11 9M14 20H2V18C2 15.79 4.69 14 8 14C11.31 14 14 15.79 14 18M22 12V14H13V12M22 8V10H13V8M22 4V6H13V4Z" />
+	android:width="24dp"
+	android:height="24dp"
+	android:viewportWidth="24"
+	android:viewportHeight="24">
+	<path
+		android:pathData="M2 12A10 10 0 1 0 22 12A10 10 0 1 0 2 12Z"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M9 10A3 3 0 1 0 15 10A3 3 0 1 0 9 10Z"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M7 20.662V19a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v1.662"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
 </vector>

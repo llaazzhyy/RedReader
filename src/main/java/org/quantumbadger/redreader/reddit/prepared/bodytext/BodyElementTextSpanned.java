@@ -68,6 +68,7 @@ public class BodyElementTextSpanned extends BodyElement implements DynamicSpanne
 		}
 
 		mTextView.setText(mSpanned, LinkifiedTextView.BufferType.SPANNABLE);
+		mTextView.setLineSpacing(0f, 1.18f);
 
 		if(PrefsUtility.pref_accessibility_separate_body_text_lines()) {
 

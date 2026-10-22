@@ -31,7 +31,18 @@
     </style>
 
 	<style name="RR.Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-		<item name="android:textSize">18sp</item>
+		<item name="android:textSize">19sp</item>
+		<item name="android:fontFamily">@font/inter_semibold</item>
+		<item name="fontFamily">@font/inter_semibold</item>
+		<item name="android:letterSpacing">-0.01</item>
+	</style>
+
+	<!-- Screen transitions: a short, subtle slide + fade -->
+	<style name="RR.Animation.Activity" parent="@android:style/Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@anim/rr_activity_open_enter</item>
+		<item name="android:activityOpenExitAnimation">@anim/rr_activity_open_exit</item>
+		<item name="android:activityCloseEnterAnimation">@anim/rr_activity_close_enter</item>
+		<item name="android:activityCloseExitAnimation">@anim/rr_activity_close_exit</item>
 	</style>
 
 	<style name="RR.Dark.Dialog.Alert" parent="Theme.Material3.Dark.Dialog.Alert">

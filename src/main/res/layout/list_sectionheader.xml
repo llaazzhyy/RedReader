@@ -19,13 +19,17 @@
 
 <TextView
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	android:clickable="false"
 	android:focusable="false"
-	android:paddingBottom="2dp"
-	android:paddingLeft="4dp"
-	android:paddingRight="4dp"
-	android:paddingTop="26dp"
+	android:paddingBottom="6dp"
+	android:paddingLeft="16dp"
+	android:paddingRight="16dp"
+	android:paddingTop="28dp"
+	android:fontFamily="@font/inter_semibold"
+	android:letterSpacing="0.04"
 	android:textColor="?rrListHeaderTextCol"
-	android:textSize="16sp"/>
+	android:textSize="13sp"
+	tools:ignore="UnusedAttribute"/>

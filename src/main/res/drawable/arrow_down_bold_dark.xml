@@ -1,7 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon "arrow-big-down" from Lucide (https://lucide.dev), ISC License -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp"
-    android:width="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
-    <path android:fillColor="#FFF" android:pathData="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" />
+	android:width="24dp"
+	android:height="24dp"
+	android:viewportWidth="24"
+	android:viewportHeight="24">
+	<path
+		android:pathData="M9 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 0 1 1h3.293a0.707 0.707 0 0 1 0.5 1.207l-7.086 7.086a1 1 0 0 1 -1.414 0l-7.086 -7.086a0.707 0.707 0 0 1 0.5 -1.207H8a1 1 0 0 0 1 -1Z"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
 </vector>

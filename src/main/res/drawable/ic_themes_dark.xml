@@ -1,9 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon "palette" from Lucide (https://lucide.dev), ISC License -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-		android:width="24dp"
-		android:height="24dp"
-	    android:viewportHeight="24"
-		android:viewportWidth="24">
-    <path
-		android:fillColor="#FFFFFFFF"
-		android:pathData="M18,4V3c0,-0.55 -0.45,-1 -1,-1H5c-0.55,0 -1,0.45 -1,1v4c0,0.55 0.45,1 1,1h12c0.55,0 1,-0.45 1,-1V6h1v4H9v11c0,0.55 0.45,1 1,1h2c0.55,0 1,-0.45 1,-1v-9h8V4h-3z"/>
+	android:width="24dp"
+	android:height="24dp"
+	android:viewportWidth="24"
+	android:viewportHeight="24">
+	<path
+		android:pathData="M12 22a1 1 0 0 1 0 -20a10 9 0 0 1 10 9a5 5 0 0 1 -5 5h-2.25a1.75 1.75 0 0 0 -1.4 2.8l0.3 0.4a1.75 1.75 0 0 1 -1.4 2.8Z"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M13 6.5A0.5 0.5 0 1 0 14 6.5A0.5 0.5 0 1 0 13 6.5Z"
+		android:fillColor="#E6E9EE"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M17 10.5A0.5 0.5 0 1 0 18 10.5A0.5 0.5 0 1 0 17 10.5Z"
+		android:fillColor="#E6E9EE"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M6 12.5A0.5 0.5 0 1 0 7 12.5A0.5 0.5 0 1 0 6 12.5Z"
+		android:fillColor="#E6E9EE"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M8 7.5A0.5 0.5 0 1 0 9 7.5A0.5 0.5 0 1 0 8 7.5Z"
+		android:fillColor="#E6E9EE"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
 </vector>

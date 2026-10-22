@@ -1,8 +1,26 @@
-<!-- drawable/message_plus.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon "message-square-plus" from Lucide (https://lucide.dev), ISC License -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp"
-    android:width="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
-    <path android:fillColor="#FFF" android:pathData="M20,2A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H6L2,22V4C2,2.89 2.9,2 4,2H20M11,6V9H8V11H11V14H13V11H16V9H13V6H11Z" />
+	android:width="24dp"
+	android:height="24dp"
+	android:viewportWidth="24"
+	android:viewportHeight="24">
+	<path
+		android:pathData="M22 17a2 2 0 0 1 -2 2H6.828a2 2 0 0 0 -1.414 0.586l-2.202 2.202A0.71 0.71 0 0 1 2 21.286V5a2 2 0 0 1 2 -2h16a2 2 0 0 1 2 2Z"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M12 8v6"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M9 11h6"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
 </vector>

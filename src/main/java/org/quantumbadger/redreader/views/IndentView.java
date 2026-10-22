@@ -58,8 +58,8 @@ class IndentView extends View {
 
 		super(context, attrs, defStyleAttr);
 
-		mPixelsPerIndent = General.dpToPixels(context, 10.0f);
-		final int mPixelsPerLine = General.dpToPixels(context, 2);
+		mPixelsPerIndent = General.dpToPixels(context, 12.0f);
+		final int mPixelsPerLine = General.dpToPixels(context, 1.5f);
 		mHalfALine = mPixelsPerLine / 2;
 
 		final int rrIndentBackgroundCol;

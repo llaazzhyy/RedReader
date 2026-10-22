@@ -1,8 +1,32 @@
-<!-- drawable/pin_off.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon "pin-off" from Lucide (https://lucide.dev), ISC License -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp"
-    android:width="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
-    <path android:fillColor="#FFF" android:pathData="M2,5.27L3.28,4L20,20.72L18.73,22L12.8,16.07V22H11.2V16H6V14L8,12V11.27L2,5.27M16,12L18,14V16H17.82L8,6.18V4H7V2H17V4H16V12Z" />
+	android:width="24dp"
+	android:height="24dp"
+	android:viewportWidth="24"
+	android:viewportHeight="24">
+	<path
+		android:pathData="M12 17v5"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M15 9.34V7a1 1 0 0 1 1 -1a2 2 0 0 0 0 -4H7.89"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="m2 2l20 20"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
+	<path
+		android:pathData="M9 9v1.76a2 2 0 0 1 -1.11 1.79l-1.78 0.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h11"
+		android:strokeColor="#E6E9EE"
+		android:strokeWidth="1.75"
+		android:strokeLineCap="round"
+		android:strokeLineJoin="round"/>
 </vector>

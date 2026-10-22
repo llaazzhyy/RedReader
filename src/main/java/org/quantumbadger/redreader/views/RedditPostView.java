@@ -62,6 +62,7 @@ public final class RedditPostView extends FlingableItemView
 	private final TextView subtitle;
 
 	@NonNull private final ImageView mThumbnailView;
+	@NonNull private final View mThumbnailCard;
 	@NonNull private final ImageView mOverlayIcon;
 
 	@NonNull private final LinearLayout mOuterView;
@@ -209,6 +210,9 @@ public final class RedditPostView extends FlingableItemView
 
 		mThumbnailView = Objects.requireNonNull(
 				rootView.findViewById(R.id.reddit_post_thumbnail_view));
+
+		mThumbnailCard = Objects.requireNonNull(
+				rootView.findViewById(R.id.reddit_post_thumbnail_card));
 
 		mOverlayIcon = Objects.requireNonNull(
 				rootView.findViewById(R.id.reddit_post_overlay_icon));
@@ -358,7 +362,7 @@ public final class RedditPostView extends FlingableItemView
 			if(!showInlinePreview) {
 				mImagePreviewLoadingSpinner.setVisibility(GONE);
 				mImagePreviewOuter.setVisibility(GONE);
-				setBottomMargin(false);
+				setBottomMargin();
 			}
 
 			if(showThumbnail) {
@@ -366,6 +370,7 @@ public final class RedditPostView extends FlingableItemView
 				final Bitmap thumbnail = newPost.getThumbnail(this, mUsageId);
 				mThumbnailView.setImageBitmap(thumbnail);
 
+				mThumbnailCard.setVisibility(VISIBLE);
 				mThumbnailView.setVisibility(VISIBLE);
 				mThumbnailView.setMinimumWidth(mThumbnailSizePrefPixels);
 
@@ -379,6 +384,7 @@ public final class RedditPostView extends FlingableItemView
 			} else {
 				mThumbnailView.setMinimumWidth(0);
 				mThumbnailView.setVisibility(GONE);
+				mThumbnailCard.setVisibility(GONE);
 				mInnerView.setMinimumHeight(General.dpToPixels(mActivity, 64));
 			}
 		}
@@ -469,16 +475,12 @@ public final class RedditPostView extends FlingableItemView
 		void onPostCommentsSelected(RedditPreparedPost post);
 	}
 
-	private void setBottomMargin(final boolean enabled) {
+	private void setBottomMargin() {
 
 		final MarginLayoutParams layoutParams
 				= (MarginLayoutParams)mOuterView.getLayoutParams();
 
-		if(enabled) {
-			layoutParams.bottomMargin = General.dpToPixels(mActivity, 6);
-		} else {
-			layoutParams.bottomMargin = 0;
-		}
+		layoutParams.bottomMargin = General.dpToPixels(mActivity, 2);
 
 		mOuterView.setLayoutParams(layoutParams);
 	}
@@ -514,14 +516,14 @@ public final class RedditPostView extends FlingableItemView
 			mImagePreviewHolder.setImageSize(0, 0);
 			mImagePreviewOuter.setVisibility(GONE);
 			mImagePreviewLoadingSpinner.setVisibility(GONE);
-			setBottomMargin(false);
+			setBottomMargin();
 			return;
 		}
 
 		mImagePreviewHolder.setImageSize(details.imageWidthPx, details.imageHeightPx);
 
 		mImagePreviewOuter.setVisibility(VISIBLE);
-		setBottomMargin(true);
+		setBottomMargin();
 
 		mPreviewLoader = loader;
 
@@ -546,7 +548,7 @@ public final class RedditPostView extends FlingableItemView
 				mImagePreviewImageView.setImageBitmap(loader.getBitmap());
 				mImagePreviewLoadingSpinner.setVisibility(GONE);
 				mImagePreviewOuter.setVisibility(VISIBLE);
-				setBottomMargin(true);
+				setBottomMargin();
 
 				if(mPost.isVideoPreview()) {
 					mImagePreviewPlayOverlay.setVisibility(VISIBLE);
@@ -579,7 +581,7 @@ public final class RedditPostView extends FlingableItemView
 				mImagePreviewPlayOverlay.setVisibility(GONE);
 				mImagePreviewLoadingSpinner.setVisibility(VISIBLE);
 				mImagePreviewOuter.setVisibility(VISIBLE);
-				setBottomMargin(true);
+				setBottomMargin();
 
 				break;
 		}
